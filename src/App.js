@@ -1,16 +1,28 @@
 
 import React from 'react'
+import { Route, Routes } from 'react-router-dom'
+
+import Login from './pages/Login'
+import Home from './pages/Home'
+import Profile from './pages/Profile'
+import Signup from './pages/Signup'
+import Navbar from './components/Navbar'
+
 
 function App() {
-  return (
-    <div className='uppercase'>
-      <h1 className='font-nsans-light'>netflix</h1>
-      <h1 className='font-nsans-medium'>netflix</h1>
-      <h1>netflix</h1>
-      <h1 className='font-nsans-bold'>netflix</h1>
-      
-    </div>
-  )
+  return <>
+  <Navbar />
+  <Routes>
+    <Route path='/' element={<Home/>}/>
+    <Route path='/Login' element={<Login/>}/>
+    <Route path='/Profile' element={<Profile/>}/>
+    <Route path='/Signup' element={<Signup/>}/>
+
+  
+  </Routes>
+  </>
+    
+  
 }
 
 export default App
