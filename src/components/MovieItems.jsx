@@ -26,7 +26,7 @@ const MovieItems = ({ movie }) => {
           className='w-full h-40 block object-cover object-top'
           src={createImageurl(backdrop_path ?? poster_path, "w500")}
           alt={title}
-         className=''/>
+      />
   
         {isHovered && (
           <div className='absolute top-0 left-0 w-full h-40 bg-black/80 opacity-0 hover:opacity-100'>
