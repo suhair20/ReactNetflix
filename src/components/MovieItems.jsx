@@ -5,7 +5,7 @@ import { FaHeart,FaRegHeart } from "react-icons/fa";
 
 const MovieItems = ({ movie }) => {
     const { title, backdrop_path, poster_path } = movie;
-    const [like,setlike]=useState(false)
+    const [like]=useState(false)
     const [isHovered, setIsHovered] = useState(false);
   
     const handleMouseEnter = () => {

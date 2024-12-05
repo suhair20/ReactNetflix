@@ -7,7 +7,7 @@ function Signup() {
   const [Rememberlogin,setremeberlogin]=useState(true)
   const [email,setemail]=useState('')
   const [password,setpassword]=useState('')
-  const {user,signup}=UserAuth()
+  const {signup}=UserAuth()
   const navigate=useNavigate()
 
   const handleformsubmit=async(e)=>{
